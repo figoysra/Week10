@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Airbnb Cereal App Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Medium'), url('AirbnbCerealMedium.woff') format('woff');
+}
+
+.air {
+    font-family: Airbnb Cereal App Medium;
+}
+.bdr {
+    border: 1px solid green;
+}
+
+.w5 {
+    width: 5%;
+}
+.w90{
+    width: 90%;
+}
+.bg{
+    background: rgba(190, 195, 202, 0.3);
+}
+.bord{
+    border: 2px solid rgba(190, 195, 202, 0.3);
+}
+.TittleEmpty{
+    font-size: 20px;
+    font-weight: 700;
+}
+.Textempty{
+    font-size: 15px;
+    color: #CECECE;
+}
+.product{
+    width: 100%;
+}
+.border{
+    width: 250px;
+    height: 130px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-position: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+.cart{
+    margin-left: 0px;
+}
+.TitleCart{
+    font-size: 18px;
+}
+.bordercart{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-left: 30px;
+
+}
+.button{
+    font-size: 15px;
+    width: 27px;
+    height: 27px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid #65dd09;
+    color: #65dd09;
+    font-weight: bolder;
+}
+.bdrbutton{
+    font-size: 14px;
+    display: flex;
+    width: 27px;
+    height: 27px;
+    border-top: 1px solid #65dd09;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #65dd09;
+}
+.TitleProduct{
+    font-size: 18px;
+    
+}
+.total{
+    width: 100%;
+}
+.price{
+    
+    font-weight: bold;
+    font-size: 16px;
+}
+.checkout{
+    width: 440px;
+}
+.blue{
+    border: none;
+    background-color:  #57CAD5;
+    color: white;
+}
+.pink{
+    border: none;
+    background-color: #F24F8A;
+    color: white;
+}
+.fs-15{
+    font-size: 15px;
+}
+.totalcart{
+    background-color: #57CAD5;
+    color: white;
+    font-size: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.offcanvas{
+    background-color:green;
+}

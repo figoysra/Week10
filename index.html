@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        
+    </head>
+    <body>
+        <div class="row m-0 air">
+            <div class="col-lg-8  p-0"> 
+                <div class="navbar navbar-light w-100  shadow">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand " href="#">Food Items</a>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="offcanvas set offcanvas-start maxwidth" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column ">
+                            <img class="m-2" src="https://s3-alpha-sig.figma.com/img/5f5e/9018/1589b40652d8d6e71a35f5887e117a54?Expires=1626652800&Signature=JCWr4adOaoXSUBePnI1iOrqdBGzj0ATvMhNgPIOdBMANH8FZYUMor-6NZfIHh5-6QG6lPokmkrjSMHOeDRbRhNYq-anrYstXtVktEyyXjJWCefYAnPfWaumo5azvcnQMVCZIfEKg2JjCYsLCwfz6Mi-jhS4Oh3j7ZDp6yL5CRQqeVaZ6VaXLJTsbjaNkDviGPvAmvHYYD2cdzAKRRHUeR-2ZQdt56qDAZ1rZn8ElFjXddpc8N0IUbrYb74Nytor2ddbMphAPYQ~UY0Jiexaj0EpR8OahCbRCRkJusfwpAFxokVapmOKYNuwQpVeU0vlcwK3FQLKIhUXZUFhdTwBpSA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="44px" height="auto" alt="">
+                            <img class="m-2" src="https://s3-alpha-sig.figma.com/img/88b1/277b/5d8ce59748995fbae245b9cf2b04225b?Expires=1626652800&Signature=PcSCEc5BPxuz9NmoHJK6bspthU3ZmjPJrzpyUSDBTvwsHEJjl1ubsaUsywEe0fgjTu2nXVQr3l7A1eGEF7tySXYC0t0dRfRCv~QGvqsxUn42K0sutPeXMjjFPYXuYbdnNn3rvb3H4jlN2XiDYDd~zuGPQnfwA9Xn7Zu6eqoKt~duWUvSsZOMGsSJOfQXfBAW3-1JykLtHxAh4ReeY25d~QwpzuEp1ZT40flo3L58s~OCoyovk47qnyML7nrhvuwGRE3j4fMstWuhE82VglSUTkOrZ2KgD9LhiVN-Jw7fDK-YWVSUwhMagd-z4UYE7vkJxvNhyTgyWdVmvXMGXeCreA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="44px" height="auto" alt="">
+                            <img class="m-2" src="https://s3-alpha-sig.figma.com/img/66c6/d56b/44808a713483635f2bead6c291ac6a4f?Expires=1626652800&Signature=dqXw0y4rdxoCg207ak4FR8UHopHcTgt641Y294OxPIPxFx55GT7BPLkEMYlZsOUPbOUY5mfmjkKc1~O9X~iLdtfBetRpy0RxjZcKS65m1gfeJXixhXdK7CJq9rQ54YRiv12Rrsf4DPOyUkc4tva2FmU~5bUR2qwN5tXgIftBf5dE~cvLaMdFu1LfPJXoH18nqZPa1~ybwl7xoiXYCgpLCEvyA4Q-2UbTO8e~R6CuKaSwEvo5XAfO4Dfw1DKT~9aQnlMsICJ~5UbnkeIFYxyS59iMVUMksPQ9YWRSmD55hJIk9YIPyKaPaA9ZWPlR17EstqJLNDupB-FUDhPnkV-Itg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="44px" height="auto" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="listproduct" class="row ms-0 ps-1 pe-1 bg w-100">
+                </div>
+                <!-- <div id="listproduct" class="product bg"></div> -->
+            </div>
+            <div class="col-lg-4 cart  p-0">
+                <div class="navbar w-100 navbar-light shadow">
+                    <div id="cartdata()" class="d-flex  w-100 align-items-center justify-content-center">
+                        <a class="navbar-brand  me-1" href="#">Cart</a>
+                        <div id = "cartlength" class=" totalcart rounded-circle"></div>
+                    </div>
+                </div>
+                <div id = datacart() class="pt-4" >
+                    <div id="listcart">
+                        <div class="d-flex mt-4 flex-column align-items-center">
+                            <img src="./images/empty.png" width="150px" height="auto" >
+                            <h1 class="TittleEmpty fw-normal mt-2 mb-0">Your Cart is Empty</h1>
+                            <p class="Textempty"> Please add some items from the menu</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="total"></div>
+            </div>
+            
+        </div>
+        
+    </body>
+    <script src="./database/dataproduct.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/c302e2e4ed.js" crossorigin="anonymous"></script>
+</html>
